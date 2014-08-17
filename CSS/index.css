@@ -1,0 +1,243 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote,a {
+padding: 0;
+margin: 0;
+line-height:inherit;
+font-size: 100%;
+text-decoration: none;
+}
+/* Body and background body: z-index -9000 / and img background : -8999*/
+body {
+	max-width:1024px;
+	min-height:100%;
+	z-index: -9000;
+}
+	body #divContent-wrapper {
+		min-width: 100%;
+		min-height: 100%;
+		position:absolute;
+		top:0px;
+		left:0px;
+		z-index: -9000;
+		}
+		body #divContent-wrapper #background{
+			width:100%;
+			min-height:100%;
+			position:absolute;
+			top:0px;
+			left:0px;
+			z-index: -8999;
+		}
+	
+/*Content z-index: -1 */
+#divContent {
+	width:63%;
+	height:600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5%;
+	border:1px solid red;
+	position:relative;
+	visibility:hidden;
+	border-radius:10px;
+	z-index:-1;
+}
+#divContent:after {
+	  content: " ";
+	  display: block;
+	  clear:both;
+	  overflow: hidden;
+}
+/*Div CONTENT HOLDER!!*/
+#div_Content_holder {
+	width:620px;
+	min-height:250px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:14%;
+	
+}	
+	#div_Content_holder:after {
+          content: " ";
+          display: block;
+          clear:both;
+          overflow: hidden;
+        }
+
+
+/*CSS na balon4etata  z-index2*/
+	.div_wellcome_holders {
+		width: 200px;
+		height:200px;
+		margin-top:5%;
+		display:inline-block;
+		visibility:visible;
+		transition:all 0.6s linear;
+	}
+		.div_wellcome_holders  #wellcome_btn {
+			width: 90%;
+			height:90%;
+			margin-top:5%;
+			background-image:url(../images/wellcomebtn.png);
+			background-position:left top;
+			background-size:100% 100%;
+			cursor:pointer;
+			display:inline-block;
+			border-radius:50%;
+		}	
+			#wellcome_btn img {
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+			/*LEVEL HOLDERS CSS*/
+#divContent .div_level_holders {
+		width:620px;
+		min-height:250px;
+		position:absolute;
+		visibility:hidden;
+		top:0px;
+		left:0px;
+}		
+/*prozoreca obxva6ta6 boxovete s menuta 1*/
+	#div_Menu_window_level1 {
+		text-align:center;
+		margin-top:10%;
+		border:1px solid yellow;
+		z-index: 2;
+	}
+		#div_Menu_window_level1:after {
+          content: " ";
+          display: block;
+          clear:both;
+          overflow: hidden;
+        }
+     
+			#div_Menu_window_level2 {
+				border:1px solid yellow;
+				z-index: 3;
+			}
+			#div_Menu_window_level2:after {
+				content: " ";
+				display: block;
+				clear:both;
+				overflow: hidden;
+			}
+				#div_Menu_window_level3 {
+					border:1px solid yellow;
+					z-index: 4;
+				}
+				#div_Menu_window_level3:after {
+					content: " ";
+					display: block;
+					clear:both;
+					overflow: hidden;
+				}
+					#div_Menu_window_level4 {
+						z-index: 5;
+					}
+						#div_Menu_window_level5 {
+						z-index: 6;
+					}
+	    
+    /* Mqstoto v koeto se namirat butonite ( pravoagalnicite)*/ 
+	.div_buttons_menu {
+		width:100%;
+		height: auto;
+		border: 1px solid blue;
+		text-align:center;
+	}
+	.div_buttons_menu:after {
+          content: " ";
+          display: block;
+          clear:both;
+          overflow: hidden;
+	}
+		.div_buttons_menu>div {
+			width: 130px;
+			height: 130px;
+	    	border: 1px solid red;
+	    	text-align: center;
+	    	}
+		  .div_buttons_menu .menus:after {
+	          content: " ";
+	          display: block;
+	          overflow: hidden;
+		  }
+/*CSS na otdelnite elementi*/
+	/*red 1
+	.div_first_row {
+		margin-left:auto;
+		margin-right:auto;
+	}*/
+		/*Red 1*/
+			.div_first_row_left {
+				float:left;
+				margin-left: 27%;
+			}
+			.div_first_row_right {
+				float:right;
+				margin-right: 27%;
+			} 
+	    	/*Red 2*/
+		    	.div_second_row_left {
+		    		float:left;
+		    		margin-left: 14%;
+		    	}
+		    	.div_second_row_middle{
+		    		margin-left: auto;
+		    		margin-right: auto;	
+		    	}
+		    		
+		    	.div_second_row_right {
+		    		float:right;
+		    		margin-right: 14%;
+		    	}
+	    /*Red 3*/
+	   		.div_third_row_left {
+	   			float:left;
+				margin-left: 27%;
+	   		}
+	   		.div_third_row_right {
+	   			float:right;
+				margin-right: 27%;
+	   		}
+	/*Red 5
+	.div_fifth_row {
+		margin-left: auto;
+		margin-right: auto;
+	}*/
+	
+/*CSS na butonite */
+.menus {
+    margin: 0px auto;
+	width: 130px;
+	height: 130px;
+	background: url(../images/final/zelen_btn.png) no-repeat;
+	background-position:center center;
+	background-size:100% 100%;
+	transition:all 0.6s linear;
+	cursor:pointer;
+	border-radius:100px;
+	line-height: 100px;
+	vertical-align: middle;
+	visibility:visible;
+	display:block;
+}
+#div_central_btn {
+	width: 100%;
+	height: 100%;
+	transition:all 0.6s linear;
+	cursor:pointer;
+	display:block;
+	line-height:130px;
+	background: url(../images/final/zelen_btn.png) no-repeat center ;
+	background-position:left top;
+	background-size:100% 100%;
+	visibility:visible;
+	}
+
+

@@ -1,0 +1,164 @@
+.mini{
+	width:90px;
+	height:90px;
+	/*margin-left:50%;
+	margin-top: 50%;*/
+	line-height:46px;
+}
+.hideios {
+	opacity: 0;
+}
+
+.escapeing {
+	width: 10px;
+	height: 10px;
+	margin-top:25%;
+	border-radius: 100px;
+}
+.entering {
+}
+/*InAnimation 1*/
+ 
+#right div.InAnim{
+ position:absolute;
+margin-top:0px;
+  display:block;
+animation:mymoveRight 0.4s 1;
+-webkit-animation:mymoveRight 0.4s 1;
+-webkit-animation-timing-function:linear;
+}
+#rightCentral div.InAnim{
+ position:absolute;
+margin-top:0px;
+  display:block;
+animation:mymoveRightCenter 0.4s 1;
+-webkit-animation:mymoveRightCenter 0.4s 1;
+-webkit-animation-timing-function:linear;
+}
+#left div.InAnim{
+ position:absolute;
+margin-top:0px;
+  display:block;
+animation:mymoveLeft 0.4s 1;
+-webkit-animation:mymoveLeft 0.4s 1;
+-webkit-animation-timing-function:linear;
+}
+#leftCentral div.InAnim{
+ position:absolute;
+margin-top:0px;
+  display:block;
+animation:mymoveLeftCenter 0.4s 1;
+-webkit-animation:mymoveLeftCenter 0.4s 1;
+-webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes mymoveRight /* Safari and Chrome */
+{
+from {-webkit-transform:rotate(0deg);right:40%;}
+to {-webkit-transform:rotate(360deg);right:27.5%}
+}
+@-webkit-keyframes mymoveLeft /* Safari and Chrome */
+{
+from {-webkit-transform:rotate(0deg);left:40%;}
+to {-webkit-transform:rotate(360deg);left:27.5%}
+}
+@-webkit-keyframes mymoveRightCenter /* Safari and Chrome */
+{
+from {-webkit-transform:rotate(0deg);right:40%;}
+to {-webkit-transform:rotate(360deg);right:14%}
+}
+@-webkit-keyframes mymoveLeftCenter /* Safari and Chrome */
+{
+from {-webkit-transform:rotate(0deg);left:40%;}
+to {-webkit-transform:rotate(360deg);left:14%}
+}
+.move{
+    position:relative;
+}
+.moveXY,.moveXY2,.moveXY3{
+    position:relative;
+}
+
+/*Second animation*/
+div.InAnim1{
+    position:absolute;
+margin-top:0px;
+  display:block;
+animation:secondanimated_div 0.7s 1;
+-webkit-animation:secondanimated_div 0.7s 1;
+-webkit-animation-timing-function:linear;
+
+}
+        @keyframes secondanimated_div
+{
+0%		{transform:scale(0,0) rotate(1080deg);}
+100%	{transform:scale(1,1) rotate(0deg);}
+}
+
+@-webkit-keyframes secondanimated_div
+{
+0%		{-webkit-transform:scale(0,0) rotate(1080deg);}
+100%	{-webkit-transform:scale(1,1)rotate(0deg);}
+}
+
+@-moz-keyframes secondanimated_div
+{
+0%   {-moz-transform:scale(0,0) rotate(1080deg);}
+100% {-moz-transform:scale(1,1) rotate(0deg);}
+}
+/*Third Animation*/
+#left .InAnim0{
+display:block;
+position:absolute;
+animation:mymoveLeft 1s 1;
+-webkit-animation:mymoveLeft 1s 1;
+-webkit-animation-timing-function:linear;
+}
+#right .InAnim0{
+display:block;
+position:absolute;
+animation:mymoveRight 1s 1;
+-webkit-animation:mymoveRight 1s 1;
+-webkit-animation-timing-function:linear;
+
+}
+#leftCentral .InAnim0{
+display:block;
+position:absolute;
+animation:mymoveCentralLeft 1s 1;
+-webkit-animation:mymoveCentralLeft 1s 1;
+-webkit-animation-timing-function:linear;
+}
+#rightCentral .InAnim0{
+display:block;
+position:absolute;
+animation:mymoveCentralRight 1s 1;
+-webkit-animation:mymoveCentralRight 1s 1;
+-webkit-animation-timing-function:linear;
+}
+        @keyframes mymove
+{
+from {left:0px;}
+to {left:200px;}
+}
+
+@-webkit-keyframes mymoveLeft /* Safari and Chrome */
+{
+from {-webkit-transform:scale(-1,-1) rotate(0deg);left:60%;}
+to {-webkit-transform:scale(1,1) rotate(360deg);left:27.5%}
+}
+@-webkit-keyframes mymoveRight /* Safari and Chrome */
+{
+from {-webkit-transform:scale(-1,-1) rotate(0deg);right:60%;}
+to {-webkit-transform:scale(1,1) rotate(360deg);right:27%}
+}
+@-webkit-keyframes mymoveCentralLeft /* Safari and Chrome */
+{
+from {-webkit-transform:scale(-1,-1) rotate(0deg);left:50%;}
+to {-webkit-transform:scale(1,1) rotate(360deg);left:14%}
+}
+@-webkit-keyframes mymoveCentralRight /* Safari and Chrome */
+{
+from {-webkit-transform:scale(-1,-1) rotate(0deg);right:50%;}
+to {-webkit-transform:scale(1,1) rotate(360deg);right:14%}
+}

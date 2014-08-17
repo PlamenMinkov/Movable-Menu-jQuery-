@@ -1,0 +1,118 @@
+/* IOS SLAIDER*/ 
+	.div_Menu_window_slaider {
+	min-width:650px;
+	min-height:400px;
+	padding-top:5%;
+	padding-left:10%;
+	background:url(../images/final/green_slider.png);
+	background-size:100% 100%;
+	visibility:visible;
+	display:block;
+	transition:all 0.6s linear;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index: 1000;
+	}
+/*CLOSE BUTTOON*/
+		#div_close {
+			width:30px;
+			height: 30px;
+			border-radius:5em;
+			float:right;
+			position: relative;
+			right: 0px;
+			top: -20px;
+			background-image: url(../images/final/green_X.png);
+			background-size:100% 100%;
+			cursor: pointer;
+		}
+.iosSlider {
+				/*required*/
+				width: 600px;
+				height: 400px;
+				
+			}
+			.iosSlider .prevButton {
+				position: absolute;
+				top: 140px;
+				left: 20px;
+				width: 20px;
+				height: 40px;
+				opacity: 0.5;
+				background: url(../images/final/slider-buttons.png) no-repeat 0 0;
+				z-index: 2;
+			}
+			
+			.iosSlider .nextButton {
+				position: absolute;
+				top: 140px;
+				right: 20px;
+				width: 20px;
+				height: 40px;
+				opacity: 0.5;
+				background: url(../images/final/slider-buttons.png) no-repeat 100% 0;
+				z-index: 2;
+			}
+			.iosSlider .slider {
+				/*required*/
+				width: 100%;
+				height: 100%;
+			}
+			.iosSlider .slider .slide {
+			/*required*/
+				position: relative;
+				top: 0;
+				left: 0;
+				
+				width: 600px;
+				height: 360px;
+				border-radius:10px;
+				border:2px solid black;
+				background: #fff;
+				background-size:100% 100%;
+				background-repeat:no-repeat;
+				margin: 0 0 0 0;
+			}
+			.iosSlider .slider #item1{
+				background-image: url(../images/bg.png);
+			}
+			.iosSlider .slider #item2{
+				background-image: url(../images/bgfinal.jpg);
+			}
+			.iosSlider .slider #item3{
+				background-image: url(../images/bg.png);
+				
+			}
+			
+/*Text*/
+.iosSlider .slider .slide .text1 {
+				position: absolute;
+				top: 30px;
+				right: 150px;
+				opacity: 0;
+				filter: alpha(opacity:0);
+				background: #000;
+			}
+			
+			.iosSlider .slider .slide .text1 span {
+				color: #fff;
+				font: bold 50px/60px "Helvetica Neue",Helvetica,Arial,sans-serif;
+				padding: 0 8px;
+			}
+			
+			.iosSlider .slider .slide .text2 {
+				position: absolute;
+				top: 90px;
+				right: 0;
+				opacity: 0;
+				filter: alpha(opacity:0);
+				background: #000;
+				padding: 5px 7px 7px 7px;
+			}
+			
+			.iosSlider .slider .slide .text2 span {
+				color: #fff;
+				font: normal 16px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;	
+			}
+			
